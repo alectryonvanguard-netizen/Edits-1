@@ -1,0 +1,12 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nexa_background">#050816</color>
+    <color name="nexa_surface">#10172A</color>
+    <color name="nexa_cyan">#00E5FF</color>
+    <color name="nexa_blue">#246BFD</color>
+    <color name="nexa_purple">#963BFF</color>
+    <color name="nexa_magenta">#FF35C8</color>
+    <color name="nexa_text">#F4F7FF</color>
+    <color name="nexa_muted">#9AA9CC</color>
+</resources>
