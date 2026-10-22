@@ -18,7 +18,6 @@ class ChatViewModel : ViewModel() {
             )
         )
     )
-
     val messages: StateFlow<List<ChatMessage>> = _messages.asStateFlow()
 
     private val _isLoading = MutableStateFlow(false)
@@ -32,12 +31,14 @@ class ChatViewModel : ViewModel() {
             text = question,
             isFromUser = true
         )
-
         _isLoading.value = true
 
         viewModelScope.launch {
             try {
-                val reply = "The secure AI connection still needs to be configured."
+                // The secure backend is not configured yet.
+                val reply =
+                    "Nexa AI's secure service is not connected yet. Please finish the backend setup."
+
                 _messages.value = _messages.value + ChatMessage(
                     text = reply,
                     isFromUser = false
