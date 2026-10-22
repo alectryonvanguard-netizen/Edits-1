@@ -28,11 +28,14 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Accept Android SDK licenses
-        run: yes | sdkmanager --licenses
+        run: sdkmanager --licenses </dev/null
 
-      - name: Install Android SDK packages
+      - name: Install required Android SDK packages
         run: |
-          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+          sdkmanager \
+            "platform-tools" \
+            "platforms;android-35" \
+            "build-tools;35.0.0"
 
       - name: Build Nexa AI APK
         run: gradle --no-daemon :app:assembleDebug
