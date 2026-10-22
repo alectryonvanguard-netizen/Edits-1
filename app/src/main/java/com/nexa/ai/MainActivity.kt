@@ -5,16 +5,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import kotlinx.coroutines.delay
 
 private val NexaBackground = Color(0xFF050816)
 
@@ -33,22 +28,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun NexaApp() {
-    var showBoot by remember { mutableStateOf(true) }
-
-    LaunchedEffect(Unit) {
-        delay(2500)
-        showBoot = false
-    }
-
-    androidx.compose.foundation.layout.Box(
+    Box(
         modifier = Modifier
             .fillMaxSize()
             .background(NexaBackground)
     ) {
-        if (showBoot) {
-            NexaBootScreen()
-        } else {
-            ChatScreen()
-        }
+        ChatScreen()
     }
 }
