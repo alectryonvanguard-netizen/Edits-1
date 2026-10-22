@@ -5,8 +5,8 @@
     <application
         android:allowBackup="false"
         android:label="Nexa AI"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher"
+        android:icon="@drawable/nexa_logo"
+        android:roundIcon="@drawable/nexa_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.NexaAI">
 
@@ -21,7 +21,6 @@
             </intent-filter>
 
         </activity>
-
     </application>
 
 </manifest>
