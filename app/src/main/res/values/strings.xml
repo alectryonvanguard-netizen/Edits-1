@@ -5,4 +5,9 @@
     <string name="app_tagline">Smarter Chats. Bigger Ideas.</string>
     <string name="boot_message">Starting Nexa AI...</string>
     <string name="home_greeting">Your AI journey starts here.</string>
+    <string name="chat_hint">Message Nexa AI...</string>
+    <string name="new_chat">New chat</string>
+    <string name="voice_chat">Voice chat</string>
+    <string name="image_tools">Image tools</string>
+    <string name="chat_history">Chat history</string>
 </resources>
