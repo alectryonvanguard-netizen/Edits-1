@@ -1,0 +1,8 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nexa AI</string>
+    <string name="app_tagline">Smarter Chats. Bigger Ideas.</string>
+    <string name="boot_message">Starting Nexa AI...</string>
+    <string name="home_greeting">Your AI journey starts here.</string>
+</resources>
